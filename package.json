@@ -1,19 +1,36 @@
 {
   "name": "db-bot",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "discord API use as noSQL database",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "cache": "./bin/cache.js"
   },
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "test": "mocha ./test/reducers.test.js",
+    "cache": "node ./bin/cache.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "database",
+    "nosql",
+    "sql",
+    "api",
+    "db",
+    "dbiscord"
+  ],
+  "author": "S.GABORIEAU <sam.gabor@hotmail.com>",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
     "discord.js": "^12.4.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
   }
 }
